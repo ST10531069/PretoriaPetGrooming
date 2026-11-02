@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pretoria Pet Grooming | Professional Dog & Cat Grooming Pretoria</title>
+<meta name="description" content="Best pet grooming in Pretoria. Dog wash from R150, full grooming, cat grooming. Local salon in Gauteng.">
+<meta name="keywords" content="pet grooming Pretoria, dog grooming Pretoria, dog wash">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>Pretoria Pet Grooming</h1>
+<button class="hamburger" onclick="toggleMenu()">☰</button>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="enquiry.html">Enquiry</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<main>
+<h2>Welcome to Pretoria's Best Pet Grooming</h2>
+<h3>Affordable, Trusted, Local</h3>
+<picture>
+<source media="(max-width: 480px)" srcset="images/dog-small.jpg">
+<source media="(max-width: 768px)" srcset="images/dog-medium.jpg">
+<img src="images/dog-large.jpg" style="width:100%; max-width:350px; height:auto; display:block; margin:20px auto; border-radius:12px; cursor:zoom-in;" onclick="openLightbox(this.src)" alt="Happy groomed white poodle dog Pretoria">
+</picture>
+<div id="lightbox" onclick="closeLightbox()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999;"><img id="lightbox-img" style="max-width:90%; max-height:90%;"></div>
+<h3>Why Choose Us? (Click to expand)</h3>
+<button class="accordion-btn" onclick="toggleAccordion('acc1')">✔️ 5 Years Experience</button>
+<div id="acc1" class="accordion-content"><p>We have groomed 2000+ pets in Pretoria.</p></div>
+<button class="accordion-btn" onclick="toggleAccordion('acc2')">✔️ Safe & Hygienic</button>
+<div id="acc2" class="accordion-content"><p>Pet-friendly, non-toxic products.</p></div>
+<p><a href="services.html">View services</a> | <a href="enquiry.html">Book now</a></p>
+</main>
+<footer><p>&copy; 2026 Pretoria Pet Grooming</p></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

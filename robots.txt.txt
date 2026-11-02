@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://pretoriapetgrooming.netlify.app/sitemap.xml
+
+# SEO - Allow all pages
+Disallow:

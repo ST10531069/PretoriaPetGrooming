@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Our Story - Pretoria Pet Grooming</title>
+<meta name="description" content="Learn about Pretoria Pet Grooming. 5 years experience, 2000+ pets groomed, mission to provide safe hygienic grooming in Pretoria.">
+<meta name="keywords" content="about Pretoria pet grooming, pet grooming story Pretoria, dog grooming mission">
+<meta name="author" content="Pretoria Pet Grooming">
+<link rel="canonical" href="https://pretoriapetgrooming.netlify.app/about.html">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>Pretoria Pet Grooming</h1>
+<button class="hamburger" onclick="toggleMenu()">☰</button>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="enquiry.html">Enquiry</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main>
+<h2>About Our Pretoria Salon</h2>
+<h3>Our Story</h3>
+<p>Founded in 2021 in Pretoria, Pretoria Pet Grooming started with a simple mission: make every pet look and feel amazing with love and safe, hygienic care.</p>
+
+<picture>
+<source media="(max-width: 480px)" srcset="images/dog-small.jpg">
+<source media="(max-width: 768px)" srcset="images/dog-medium.jpg">
+<img src="images/dog-large.jpg" style="width:100%; max-width:350px; height:auto; display:block; margin:20px auto; border-radius:12px; cursor:zoom-in;" onclick="openLightbox(this.src)" alt="About us - happy groomed white poodle in Pretoria" title="Our Story - Pretoria Pet Grooming">
+</picture>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999;"><img id="lightbox-img" style="max-width:90%; max-height:90%; border-radius:12px;"></div>
+
+<h3>Our Mission & Values (Click to expand)</h3>
+<button class="accordion-btn" onclick="toggleAccordion('mission1')">🎯 Our Mission</button>
+<div id="mission1" class="accordion-content"><p>To provide professional, affordable, and loving grooming services that keep Pretoria's pets healthy, happy, and beautiful.</p></div>
+
+<button class="accordion-btn" onclick="toggleAccordion('mission2')">💖 Our Values</button>
+<div id="mission2" class="accordion-content"><p>1. Pet Safety First<br>2. Hygiene & Clean Tools<br>3. Love and Patience<br>4. Affordable Prices from R150</p></div>
+
+<button class="accordion-btn" onclick="toggleAccordion('mission3')">🏆 Our Achievement</button>
+<div id="mission3" class="accordion-content"><p>Over 2000 pets groomed, 5-star Google reviews, trusted by Pretoria East, Centurion and Hatfield families.</p></div>
+
+<h3>Meet The Team</h3>
+<p>Our certified groomers have 5+ years experience in dog and cat grooming. We use pet-friendly, non-toxic products.</p>
+
+<p>
+<a href="services.html">View Our Services →</a> |
+<a href="enquiry.html">Book an Appointment →</a> |
+<a href="contact.html">Visit Us in Pretoria →</a>
+</p>
+
+<!-- SEO Internal Linking -->
+<p>Looking for <a href="services.html">dog wash in Pretoria</a> or <a href="enquiry.html">cat grooming prices</a>? Contact us today.</p>
+</main>
+
+<footer><p>&copy; 2026 Pretoria Pet Grooming | <a href="sitemap.xml">Sitemap</a> | <a href="robots.txt">Robots</a></p></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

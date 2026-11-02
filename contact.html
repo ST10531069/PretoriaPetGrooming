@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Pretoria Pet Grooming Location Map</title>
+<meta name="description" content="Contact Pretoria Pet Grooming. Find us on map at -25.7479, 28.2293 Pretoria. Send general enquiry.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>Pretoria Pet Grooming</h1>
+<button class="hamburger" onclick="toggleMenu()">☰</button>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="enquiry.html">Enquiry</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<main>
+<h2>Contact Us - General Message</h2>
+<div id="map" style="height:300px; border-radius:12px; margin-bottom:15px; width:100%;"></div>
+
+<form id="contactForm" onsubmit="return validateContact(event)" action="mailto:info@pretoriapetgrooming.co.za" method="post" enctype="text/plain">
+<label>Full Name:</label>
+<input type="text" id="cname" required>
+<label>Email:</label>
+<input type="email" id="cemail" required>
+<label>Message Type:</label>
+<select id="msgType"><option>General</option><option>Complaint</option><option>Compliment</option></select>
+<label>Full Message:</label>
+<textarea id="fullMsg" required></textarea>
+<p id="contactError" style="color:red; font-weight:bold;"></p>
+<button type="submit">Send Message</button>
+</form>
+</main>
+<footer><p>&copy; 2026 Pretoria Pet Grooming</p></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
